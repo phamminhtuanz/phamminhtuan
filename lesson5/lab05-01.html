@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: #ccc
+        }
+        nav ul li{
+            border-right: 1px solid red;
+        }
+        nav ul li:last-child {
+            border-right: 0;
+        }
+        nav ul li:hover{
+            background-color: green;
+        }
+        a{
+            text-decoration:none ;
+        }
+        nav a{
+            display: block;
+            color: rgb(7, 9, 11);
+            padding: .35rem 1 rem;
+        }
+        nav a:hover{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" target="Trang chủ">Trang chủ</a></li>
+            <li><a href="#" target="Sản phẩm">Sản phẩm</a></li>
+            <li><a href="#" target="Dịch vụ">Dịch vụ</a></li>
+            <li><a href="#" target="Hỗ trợ">Hỗ trợ</a></li>
+            <li><a href="#" target="Liên hệ">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

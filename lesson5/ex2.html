@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các bộ chọn thông dụng</title>
+    <style>
+     /* ++ tag01 + tag02{....} */
+     h2 + p{
+        color: blue;
+     } 
+     h2 ~ p{
+        color: rgb(160, 37, 64);
+     }
+     p:hover {
+        background-color: blueviolet;
+        cursor: pointer;
+     }
+     p:nth-child(1){
+        border-bottom: 5px solid green;
+     }
+     
+     p:nth-child(2n){
+        border-bottom: 5px solid rgb(170, 194, 132);
+     }
+     p:nth-child(2n+1){
+        border-bottom: 5px solid rgb(25, 19, 179);
+     }
+     /* : list */
+     p:first-child, p:last-child{
+        font-size: 2rem;
+        border: 1px solid green;
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Các bộ chọn thông dụng</h1>
+    </header>
+    <section>
+        <p>đoạn 0</p>
+        <h2>tag01 + tag02 {....}</h2>
+        <p>đoan 1</p>
+        <p>đoạn 2 </p>
+        <p>đoạn 3</p>
+        <p>đoạn 4</p>
+        <h3>00000000000</h3>
+        <p>đoạn 5</p>
+        <div>
+            <p>đoạn 6</p>
+        </div>
+    </section>
+</body>
+</html>
