@@ -1,0 +1,103 @@
+body{
+    background-color: #ffffff;
+}
+header{
+    background-color: #ccc;
+}
+.container{
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
+    padding: .5rem 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+}
+.logo.img{
+    width: 100%;
+}
+nav .icon-nav{
+    border: 1px solid;
+    border-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+}
+.icon-nav span{
+    margin: 2px 0;
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: var(--gray);
+}
+.icon-nav:hover{
+    cursor: pointer;
+    position: relative;
+}
+
+.icon-nav:hover span:nth-child(2){
+    display: none;
+}
+.icon-nav:hover span:nth-child(1){
+    transform: rotate(45deg);
+    position: absolute;
+}
+.icon-nav:hover span:nth-child(3){
+    transform: rotate(-45deg);
+    position: absolute;
+}
+nav ul{
+    list-style: none;
+    display: none;
+}
+.icon-nav:hover + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 420px;
+    right: 0;
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    nav .icon-nav {
+    display: none;
+   }
+}
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+   
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+     
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+   
+}
+
+
+/* // XXX-Large devices (larger X desktops, 1600px and up) */
+@media (min-width: 1600px) {
+   
+}
+
+/* // XXX-Large devices (larger X desktops, 1920px and up) */
+@media (min-width: 1920px) {
+    body{
+        background-color: orange;
+    }
+}
