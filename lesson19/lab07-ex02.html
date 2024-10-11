@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab07-bài thực hành 2</title>
+    <style>
+        .button button{
+            cursor: pointer;
+        }
+    </style>
+   
+</head>
+<body>
+    <section id="zone1">
+        <h1>chọn màu chữ</h1>
+        <div class="button">
+            <button value="red">đỏ</button>
+            <button value="blue">xanh</button>
+            <button value="yellow">vàng</button>
+            <button value="gray">ghi</button>
+            <button value="#7F00FF">tím</button>
+        </div>
+        <div class="noi-dung">
+            <p>Lập trình web với php và mysql</p>
+        </div>
+        <button id="reset">reset</button>
+    </section>
+
+    <!--nhúng jquery-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <!--code js-->
+
+     <script>
+        $(document).ready(function(){
+            //test jquery
+            // alert('xin chào, tôi là jquery');
+
+            //tô màu cho các button tương ứng màu nền
+            $('.button button').each(function(){
+                //lấy màu từ thuộc tính value của button
+                let valClolor = $(this).attr("value");
+                //tô màu nền (valcolor) cho button
+                $(this).css("background",valClolor)
+                   .css({
+                       "background":valClolor,
+                       'border':'1px solid'+valClolor,
+                       'padding':'.15rem 1rem'
+                   });
+            });
+
+            //tô màu cho chữ nội dung
+            $('.button button').click(function(){
+                //lấy màu từ nút
+                let color = $(this).attr('value');
+                // set color cho nội dung
+                $('.noi-dung p').css({
+                    'color':color
+                });
+            });
+            //reset
+            $('#reset').click(function(){
+                $('.noi-dung p').css({
+                    "color":'black'
+                })
+            });
+        });
+     </script>
+</body>
+</html>

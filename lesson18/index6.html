@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p class="p1">xóa thẻ p trong 3 giây</p>
+    <button class="btn1">đợi 3 giây</button>
+    <button class="btn2">thoát ẩn thoát hiện</button>
+
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $(".p1").hide(3000);
+            })
+            $(".btn2").click(function(){
+                $(".p1").toggle();
+            })
+        })
+    </script>
+</body>
+</html>

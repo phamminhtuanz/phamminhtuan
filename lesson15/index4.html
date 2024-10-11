@@ -7,12 +7,17 @@
 </head>
 <body>
     <p id="demo"></p>
+    <p>hiển thị giá trị khi so sánh giữa x và y</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
 
     <script>
         let x = false;
         let y = new Boolean(false);
 
         document.getElementById("demo").innerHTML = typeof x +"và" + typeof y;
+        document.getElementById("demo").innerHTML = (x==y);//true
+        document.getElementById("demo").innerHTML = (x===y);//false
     </script>
 </body>
 </html>

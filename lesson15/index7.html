@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Method Obj</h1>
+    <p>hiển thị 1 biến</p>
+    <p id="demo"></p>
+    <p>đối tượng có nhiều giá trị</p>
+    <p id="demo1"></p>
+    <h3><p id="demo2"></p></h3>
+
+    <script>
+        let car="đồng ";
+        document.getElementById("demo").innerHTML="Anh cho em ăn "+car;
+        const car1 ={type:"VinF", model:"V9", color:"blue"};
+        document.getElementById("demo1").innerHTML="anh đón em bằng xe"+car1.type+ "chức năng"+ car1.model+"nó có màu "+car1.color +"nhé em! "
+        const person ={};
+        person.name="Tuấn";
+        person.age=21;
+        person.address="hưng yên";
+        document.getElementById("demo2").innerHTML="tôi tên là"+person.name +"tôi vừa mới"+person.age + "tôi quê"+person.address;
+    </script>
+</body>
+</html>
